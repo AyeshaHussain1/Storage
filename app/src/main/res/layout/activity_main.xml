@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/IV"
+        android:background="@drawable/main"
+        />
+    <EditText
+        android:id="@+id/EmailET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/IV"
+        android:hint="Enter Email Here"
+        android:inputType="textEmailAddress"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColorHighlight="#ffff"
+        android:textColorHint="#FFFF9800"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/PwdET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EmailET"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Enter Password Here"
+        android:inputType="textEmailAddress"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColorHighlight="#ffff"
+        android:textColorHint="#FFFF9800"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PwdET"
+        android:id="@+id/sign"
+        android:layout_centerInParent="true"
+        android:background="@drawable/buttons"
+        android:text="sign in"
+        android:onClick="Login"/>
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="556dp"
+        android:background="#FFC2EA93"
+        android:outlineAmbientShadowColor="@color/colorAccent"
+        android:outlineSpotShadowColor="@color/colorAccent"
+        android:visibility="invisible" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign"
+        android:id="@+id/signUp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/buttons"
+        android:text="sign Up"
+        android:onClick="Signup"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signUp"
+        android:background="#FF92F496"
+        android:id="@+id/uploadPageLinkBtn"
+        android:text="Cook Book"
+        android:onClick="openUploadPage"/>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/uploadPageLinkBtn"
+        android:layout_centerInParent="true"
+        android:background="@drawable/facebook"
+        android:layout_marginBottom="10dp"
+        />
+</RelativeLayout>

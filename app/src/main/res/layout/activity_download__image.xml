@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Download_Image">
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="556dp"
+        android:background="#FFC2EA93"
+        android:outlineAmbientShadowColor="@color/colorAccent"
+        android:outlineSpotShadowColor="@color/colorAccent"
+        android:visibility="invisible" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageNameET"
+        android:hint="Enter Image Name"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:maxLength="40"
+        android:maxLines="4"/>
+
+    <ImageView
+        android:id="@+id/imageToDownloadIV"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/imageNameET"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg"
+        android:scaleType="centerCrop" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Download Image"
+        android:background="#FF92F496"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/download_btn"
+        android:layout_below="@id/imageToDownloadIV"
+        android:onClick="download"
+        />
+</RelativeLayout>
